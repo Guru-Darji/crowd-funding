@@ -10,6 +10,8 @@ router.get('/', async (req, res) => {
     return project.get({ plain: true });
   });
 
+  console.log(projects);
+
   res.render('all', { projects });
 });
 
